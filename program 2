@@ -1,14 +1,17 @@
-days=int(input("enter how days after you are returning the book:"))
-if days<=5:
-    print("you are ",days," days late, fine :",0.50*days,"rs" )
-elif days>5 and days<=10:
-    print("you are ",days," days late, fine :",1*days,"rs")
-elif days<10 and days>=30:
-    print("you are ",days," days late, fine :",5*days,"rs")
-elif days>30:
-    print("you are ",days," days late your membership is cancelled")
-else:
-    print("you are on time,happy reading..")
+try:
+    days=int(input("enter how days after you are returning the book:"))
+    if days<=5:
+        print("you are ",days," days late, fine :",0.50*days,"rs" )
+    elif days>5 and days<=10:
+        print("you are ",days," days late, fine :",1*days,"rs")
+    elif days<10 and days>=30:
+        print("you are ",days," days late, fine :",5*days,"rs")
+    elif days>30:
+        print("you are ",days," days late your membership is cancelled")
+    else:
+        print("you are on time,happy reading..")
+except ValueError:
+     print("please enter integer values")
 
 
 OUTPUT:
