@@ -1,0 +1,13 @@
+a)
+n=int(input("enter a number to find even or odd:"))
+if n&1==0:
+    print(n," is even")
+else:
+    print(n," is odd")
+
+
+OUTPUT:
+enter a number to find even or odd:3
+3  is odd
+enter a number to find even or odd:356
+356  is even
