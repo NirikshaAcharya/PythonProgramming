@@ -1,3 +1,4 @@
+a)
 try:
     n=int(input("enter a number to find even or odd:"))
     if n&1==0:
@@ -30,4 +31,24 @@ print("sum :", sum)
 OUTPUT:
 program to sum all prime number below 200:
 Sum : 4227
+
+c)
+try:
+    n = int(input("how many numbers you want to generate? "))
+    if n<=0:
+        print("please enter a positive number")
+    else:
+        c=0
+        a, b = 0, 1
+        for i in range(n):
+            print(c, end=' ')
+            c=a+b
+            a=b
+            b=c
+except ValueError:
+    print("please enter a valid input")
+
+OUTPUT:
+how many numbers you want to generate? 8
+0 1 2 3 5 8 13 21 
 
