@@ -1,9 +1,11 @@
-a)
-n=int(input("enter a number to find even or odd:"))
-if n&1==0:
-    print(n," is even")
-else:
-    print(n," is odd")
+try:
+    n=int(input("enter a number to find even or odd:"))
+    if n&1==0:
+        print(n," is even")
+    else:
+        print(n," is odd")
+except ValueError:
+    print("please enter valid integer")
 
 
 OUTPUT:
@@ -24,4 +26,8 @@ for num in range(2, 200):
     if flag:
         sum += num
 print("sum :", sum)
+
+OUTPUT:
+program to sum all prime number below 200:
+Sum : 4227
 
