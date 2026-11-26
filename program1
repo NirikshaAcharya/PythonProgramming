@@ -1,18 +1,25 @@
-amt = int(input("How much do you want to withdraw? "))
+try:
+    amt = int(input("How much do you want to withdraw? "))
 
-if amt <= 0 or amt % 10 != 0:
-    print("Withdrawal is not possible")
+    if amt <= 0 or amt % 10 != 0:
+        print("Withdrawal is not possible")
 
-else:
-    h = amt // 100
-    f = (amt % 100) // 50
-    t = (amt % 50) // 10
-    if h>0:
-        print("hundred:",h, "* 100")
-    if f>0:
-        print("fifty:",f, "* 50")
-    if t>0:
-        print("ten",t, "* 10")
+    else:
+        h = amt // 100
+        f = (amt % 100) // 50
+        t = (amt % 50) // 10
+        if h>0:
+            print("hundred:",h, "* 100")
+        if f>0:
+            print("fifty:",f, "* 50")
+        if t>0:
+            print("ten",t, "* 10")
+
+except ValueError:
+    print("please enter valid input")
+            
+
+   
         
 OUTPUT:
 How much do you want to withdraw? 870
