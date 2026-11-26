@@ -11,3 +11,17 @@ enter a number to find even or odd:3
 3  is odd
 enter a number to find even or odd:356
 356  is even
+
+b)
+print("program to sum all prime number below 200:")
+sum = 0
+for num in range(2, 200):
+    flag = True 
+    for i in range(2, num):
+        if num % i == 0:
+            flag = False
+            break
+    if flag:
+        sum += num
+print("sum :", sum)
+
